@@ -60,15 +60,7 @@ let strLength = strInput.lenght;
 //이것도 리턴보다는 화면에 프린트 되도록 하는게 나아 보임
 
 
-//while을 사용해서 1에서 100까지 합하기
-let n = 1;
-while (n < 101) {
-let 
-    n += n 
-    console.log()
-}
-
-
+// 대문자 소문자 분석기 
 let str = prompt ("대문자, 소문자 분석기 문자를 입력하시오")
 
 if (str === str.toUpperCase()) {
@@ -83,12 +75,26 @@ else if {str === str.toLowerCase() && str === str.toLowerCase()) {
 
 
  //while 문을 사용해서 1에서 100까지의 합을 구해 봅시다.
-
- while (N < 101) {
-     let N = 0;
-
-     newN = N + newN[N];
-
-    N++
+ 
+ let i = 0;
+ let resultNum = 0;
+ while (i < 101) {
+resultNum = resultNum + i;
+ console.log(resultNum);
+ i++
  }
-  
+
+
+
+
+ // 1에서 100까지 짝수를 더하라.
+ let num = 0;
+        for (i = 0; i < 101; i++) {
+            if ((i/i) === 0) {
+         num += i; 
+         console.log(num);
+     }
+    }
+ 
+
+
