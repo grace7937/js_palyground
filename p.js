@@ -95,6 +95,54 @@ resultNum = resultNum + i;
          console.log(num);
      }
     }
+
+
+    let n = Number(prompt("2이상 정수를 입력하시오")) {
+        for(i = 2; i < n; i++) {
+            if ( n % i === 0) {
+                document.write(n + "은 소수가 아닙니다.")
+                else if (n % i !== 0) {
+                    document.write(n + "은 소수입니다.")
+                }
+
+            }
+        }
+    }
  
+//구구단 
+    let n = Number(prompt("몇단의 구구단?"));
+
+    document.write('2단' + "<br>");
+
+    document.write(n + " * 1 = " + n * 1 + "<br>");
+    document.write(n + " * 2 = " + n * 2 + "<br>");
+    document.write(n + " * 3 = " + n * 3 + "<br>");
+    document.write(n + " * 4 = " + n * 4 + "<br>");
+    document.write(n + " * 5 = " + n * 5 + "<br>");
+    document.write(n + " * 6 = " + n * 6 + "<br>");
+    document.write(n + " * 7 = " + n * 7 + "<br>");
+    document.write(n + " * 8 = " + n * 8 + "<br>");
+    document.write(n + " * 9 = " + n * 9 + "<br>");
+
+
+
+    //구구단 
+
+    let numOfGugudan = propmt("구구단 단수를 입력하시오."));
+    let n = Number(numOfGugudan);
+
+    if (n < 2 || n > 9) {
+        console.log("2이상 9이하 숫자를 입력하세요")
+    } else {
+        for(i = 1; i < 10 ; i++) {
+            let valuNum = n * i;
+            document.write(n + "*" i + "=" + valuNum + "<br>");
+
+        }
+    }
+
+
+
+
 
 
