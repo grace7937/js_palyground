@@ -108,6 +108,85 @@ resultNum = resultNum + i;
             }
         }
     }
+    // 함수를 통한 구구단 구현
+
+    function calculate (x) {
+        let result = [];
+        for( i = 1; i = 9; i++) {
+            result[i] = x * i;
+            return result;
+        }
+    }
+
+    function printNum  (x, result) {
+        document.write("<h1>" + n + "단<h1>");
+        for(i = i; i <=9; i++) {
+            let y = x * i;
+            document.write(x + "*" + i + "=" + y + "<br>");
+
+        }
+}
+
+
+    function main() {
+        for (n = 2; n <= 9; n++) {
+           let  ret = calculate(n);
+           printNum(n,ret);
+
+        }
+    }
+    main();
+
+    // 구구단 최종( 객체를 이용해서 구구단 구현)
+
+
+
+    gugudan = {};
+    gugudan.result = [];
+    gugudan.current = -1;
+    gugudan.calculate = function (n) {
+        this.current = n;
+        for(i = 0; i < 9; i++) {
+            this.result = n * (i -1);
+
+        }
+    }
+    
+
+    gugudan.print = function () {
+        for (i = 0; i < 9; i++) {
+            document.write(this.current + "*" + i + "=" + this.result + "<br>");
+            
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//1-1만 사이 소수 찾기
+
+let savingNum = 0;
+for(i : 0; i < 10000; i++) {
+    let N = i - 1 ;
+if( i % N = 0) {
+savingNum = i;
+}
+
+}
  
 //구구단 
     let n = Number(prompt("몇단의 구구단?"));
@@ -138,9 +217,28 @@ resultNum = resultNum + i;
             let valuNum = n * i;
             document.write(n + "*" i + "=" + valuNum + "<br>");
 
-        }
-    }
+            //구구단 진화버전
 
+        <input type="text" id ="num">
+    <button onclick="display()">확인</button>
+    <script>
+        function display() {
+            let strN = document.getElementById("num").value;
+        // let numOfGugudan = prompt("단수를 입력하시오.");
+        let n = Number(strN);
+
+    if (n < 2 || n > 9) {
+        console.log("2이상 9이하 숫자를 입력하세요");
+    } else {
+        for(i = 1; i < 10 ; i++) {
+            let valuNum = n * i;
+            document.write(n + "*" + i + "=" + valuNum + "<br>");
+    } 
+}
+
+// </br>1-1만 사이에 소수들 리턴하기
+
+    let savingNum = 
 
 
 
