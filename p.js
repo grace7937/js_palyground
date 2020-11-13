@@ -112,27 +112,25 @@ resultNum = resultNum + i;
 
     function calculate (x) {
         let result = [];
-        for( i = 1; i = 9; i++) {
+        for(let i = 1; i <= 9; i++) {
             result[i] = x * i;
-            return result;
+        }
+        return result;
+    }
+
+
+    function printNum  (x, arr) {                                                  // why they have two arguments?   
+        document.write("<h1>" + n + "단<h1>");
+        for(let j = 1; j <=9; j++) {
+            document.write(x + "*" + j + "=" + arr[j] + "<br>");
         }
     }
 
-    function printNum  (x, result) {
-        document.write("<h1>" + n + "단<h1>");
-        for(i = i; i <=9; i++) {
-            let y = x * i;
-            document.write(x + "*" + i + "=" + y + "<br>");
-
-        }
-}
-
 
     function main() {
-        for (n = 2; n <= 9; n++) {
+        for (let n = 2; n <= 9; n++) {
            let  ret = calculate(n);
-           printNum(n,ret);
-
+           printNum(n, ret);
         }
     }
     main();
@@ -144,23 +142,65 @@ resultNum = resultNum + i;
     gugudan = {};
     gugudan.result = [];
     gugudan.current = -1;
-    gugudan.calculate = function (n) {
+
+    gugudan.calculate = function(n) {                                                
         this.current = n;
-        for(i = 0; i < 9; i++) {
-            this.result = n * (i -1);
+        for(let i = 0; i < 9; i++) {
+            this.result[i] = n * (i -1); // 배열에 넣어주는 메소드 찾기
 
         }
     }
     
 
-    gugudan.print = function () {
-        for (i = 0; i < 9; i++) {
+    gugudan.print = function() {
+        for (let i = 0; i < 9; i++) {
             document.write(this.current + "*" + i + "=" + this.result + "<br>");
-            
+
         }
     }
 
+        function main() {
+            for ( let n = 0; n < 9; n++) {
+                gugudan.calculate(n);
+                gugudan.print();  
+                  
+            }
+        }
 
+        main();
+
+    // 사칙연산
+
+
+
+function claculate() {
+    let userNum = prompt("계산 숫자을 입력하시오");
+    let n = userNum. // userNum 의 값을 받아와서 앞의 숫자는 n 으로 할당, 뒤는 i로 할당시켜준다. 
+
+    //만약 + 가 있다면
+    let plus = n + i;
+    let minus = n - i;
+    let multi = n * i;
+    let div = n / i;
+} 
+
+function printValue (인자) {
+
+    document.write(인자)
+}
+
+
+
+main () {
+
+calculate();
+printValue(); 
+
+}
+
+
+
+main();
 
 
 
