@@ -204,11 +204,33 @@ main();
 
 
 
+// 계산기 최종 
+<h1> 문자열 계산기 구현하기</h1>
+
+
+
+<div id="output"> 결과가 여기에 나옵니다.</div>
+
+<script>
+    
 
 
 
 
 
+
+
+function calc() {
+    let str = document.getElementById('input').value;
+    input.init(str);
+    let result = input.getValue();
+    while ()
+}
+
+
+
+
+    </script>
 
 
 
